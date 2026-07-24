@@ -297,29 +297,61 @@
     html{ scroll-behavior:auto; }
   }
 
-  /* ---------- MOBILE / SMALL SCREENS ---------- */
+  /* ---------- TABLET (641px – 1024px) ---------- */
+  @media (min-width: 641px) and (max-width: 1024px){
+    .hero{ padding:4rem 8vw; }
+    .glass-card{ padding:2.6rem 2rem; }
+    main{ padding:0 8vw; }
+    section{ padding:4rem 0; }
+    .cards-grid{ grid-template-columns:repeat(2, 1fr); }
+    .achieve-grid{ grid-template-columns:repeat(2, 1fr); }
+    .ref-grid{ grid-template-columns:repeat(2, 1fr); }
+    .resource-list{ grid-template-columns:repeat(2, 1fr); }
+    .contact-wrap{ padding:2.5rem 2rem; }
+    .hero h1{ font-size:clamp(2rem, 4vw, 2.8rem); }
+  }
+
+  /* ---------- MOBILE (≤640px) ---------- */
   @media (max-width: 640px){
-    .hero{ padding:3rem 6vw; min-height:100vh; }
+    .hero{ padding:3rem 5vw; min-height:100vh; }
     .glass-card{ padding:2.2rem 1.5rem; border-radius:16px; }
     .portrait{ width:96px; height:96px; margin-bottom:1.2rem; }
     .hero h1{ font-size:1.9rem; }
     .hero .tagline{ font-size:1rem; }
-    .hero-actions{ flex-direction:column; align-items:stretch; }
-    .hero-actions .btn{ text-align:center; }
-    main{ padding:0 5.5vw; }
-    section{ padding:3.2rem 0; }
-    .section-head h2{ font-size:1.5rem; }
+    .hero-actions{ flex-direction:column; align-items:stretch; gap:0.7rem; }
+    .hero-actions .btn{ text-align:center; padding:0.95rem 1.5rem; font-size:0.85rem; }
+    main{ padding:0 5vw; }
+    section{ padding:3rem 0; }
+    .section-head h2{ font-size:1.45rem; }
+    .lede{ font-size:1rem; }
     .objective-strip{ padding:1.5rem 1.4rem; }
+    .objective-strip p{ font-size:0.97rem; }
     .contact-wrap{ padding:2.2rem 1.4rem; }
-    .contact-actions, .contact-links{ flex-direction:column; }
+    .contact-wrap h2{ font-size:1.5rem; }
+    .contact-actions{ flex-direction:column; align-items:stretch; }
+    .contact-links{ flex-direction:column; align-items:center; gap:0.6rem; }
     .timeline{ padding-left:1.8rem; }
     .t-item::before{ left:-1.8rem; }
-    .cards-grid, .achieve-grid, .ref-grid, .resource-list{ grid-template-columns:1fr; }
+    .cards-grid{ grid-template-columns:1fr; }
+    .achieve-grid{ grid-template-columns:repeat(2, 1fr); }
+    .ref-grid{ grid-template-columns:1fr; }
+    .resource-list{ grid-template-columns:1fr; }
+    .values-row{ gap:0.5rem; }
+    .value-pill{ font-size:0.75rem; padding:0.4rem 0.9rem; }
+    blockquote.philosophy{ font-size:1.1rem; }
+    .t-title{ font-size:1.1rem; }
+    .card{ padding:1.2rem 1.3rem; }
+    .topo-layer svg{ width:200%; height:200%; }
   }
 
+  /* ---------- SMALL MOBILE (≤380px) ---------- */
   @media (max-width: 380px){
-    .hero h1{ font-size:1.6rem; }
+    .hero h1{ font-size:1.55rem; }
     .glass-card{ padding:1.8rem 1.1rem; }
+    .achieve-grid{ grid-template-columns:1fr; }
+    .achieve-num{ font-size:2.2rem; }
+    section{ padding:2.4rem 0; }
+    .hero .role{ font-size:0.75rem; }
   }
 </style>
 </head>
@@ -380,12 +412,12 @@
       <div class="t-item">
         <div class="t-year">2017 — 2020</div>
         <div class="t-title">Certificate of Secondary Education (CSEE)</div>
-        <div class="t-loc">Mwatulole Secondary School · Division III</div>
+        <div class="t-loc">Mwatulole Secondary School</div>
       </div>
       <div class="t-item">
         <div class="t-year">2021 — 2023</div>
         <div class="t-title">Advanced Certificate of Secondary Education (ACSEE)</div>
-        <div class="t-loc">Lake Tanganyika Secondary School · Division I</div>
+        <div class="t-loc">Lake Tanganyika Secondary School</div>
       </div>
       <div class="t-item">
         <div class="t-year">2024</div>
