@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://lucas-ishigita.github.io/portfolio/sitemap.xml
